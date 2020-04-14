@@ -21,7 +21,7 @@ namespace MimeTypes
                 //
                 // any mime types on left side not pre-loaded on right side, are added automatically
                 // some mime types can map to multiple extensions, so to get a deterministic mapping,
-                // add those to the dictionary specifcially
+                // add those to the dictionary specifically
                 //
                 // combination of values from Windows 7 Registry and 
                 // from C:\Windows\System32\inetsrv\config\applicationHost.config
@@ -158,6 +158,7 @@ namespace MimeTypes
                 {".dxf", "application/x-dxf" },
                 {".dxr", "application/x-director"},
                 {".eml", "message/rfc822"},
+                {".emf", "image/emf"},
                 {".emz", "application/octet-stream"},
                 {".eot", "application/vnd.ms-fontobject"},
                 {".eps", "application/postscript"},
@@ -165,8 +166,9 @@ namespace MimeTypes
                 {".etl", "application/etl"},
                 {".etx", "text/x-setext"},
                 {".evy", "application/envoy"},
-                {".exe", "application/octet-stream"},
+                {".exe", "application/vnd.microsoft.portable-executable"},
                 {".exe.config", "text/xml"},
+                {".f4v", "video/mp4"},
                 {".fdf", "application/vnd.fdf"},
                 {".fif", "application/fractals"},
                 {".filters", "application/xml"},
@@ -213,10 +215,13 @@ namespace MimeTypes
                 {".hxw", "application/octet-stream"},
                 {".hxx", "text/plain"},
                 {".i", "text/plain"},
+                {".ical", "text/calendar"},
+                {".icalendar", "text/calendar"},
                 {".ico", "image/x-icon"},
-                {".ics", "application/octet-stream"},
+                {".ics", "text/calendar"},
                 {".idl", "text/plain"},
                 {".ief", "image/ief"},
+                {".ifb", "text/calendar"},
                 {".iii", "application/x-iphone"},
                 {".inc", "text/plain"},
                 {".inf", "application/octet-stream"},
@@ -229,6 +234,8 @@ namespace MimeTypes
                 {".ipsw", "application/x-itunes-ipsw"},
                 {".iqy", "text/x-ms-iqy"},
                 {".isp", "application/x-internet-signup"},
+                {".isma", "application/octet-stream"},
+                {".ismv", "application/octet-stream"},
                 {".ite", "application/x-itunes-ite"},
                 {".itlp", "application/x-itunes-itlp"},
                 {".itms", "application/x-itunes-itms"},
@@ -319,6 +326,7 @@ namespace MimeTypes
                 {".mtx", "application/xml"},
                 {".mvb", "application/x-msmediaview"},
                 {".mvc", "application/x-miva-compiled"},
+                {".mxf", "application/mxf"},
                 {".mxp", "application/x-mmxp"},
                 {".nc", "application/x-netcdf"},
                 {".nsc", "video/x-ms-asf"},
@@ -678,6 +686,7 @@ namespace MimeTypes
                 {"image/x-macpaint", ".mac"},
                 {"image/x-quicktime", ".qti"},
                 {"message/rfc822", ".eml"},
+                {"text/calendar", ".ics"},
                 {"text/html", ".html"},
                 {"text/plain", ".txt"},
                 {"text/scriptlet", ".wsc"},
